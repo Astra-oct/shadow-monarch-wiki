@@ -13,20 +13,10 @@ theme:
   name: just-the-docs
   language: fr
   palette:
-    # Mode clair
+    # Mode dark
     - scheme: default
       primary: deep purple
       accent: purple
-      toggle:
-        icon: material/brightness-7
-        name: Passer en mode sombre
-    # Mode sombre
-    - scheme: slate
-      primary: deep purple
-      accent: purple
-      toggle:
-        icon: material/brightness-4
-        name: Passer en mode clair
   
   font:
     text: Roboto
