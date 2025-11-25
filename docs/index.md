@@ -1,3 +1,8 @@
+---
+layout: default
+title: Accueil
+nav_order: 1
+---
 # 🌑 Bienvenue sur le Shadow Monarch Wiki
 
 > *"Les ombres se lèvent, le monarque règne."*
