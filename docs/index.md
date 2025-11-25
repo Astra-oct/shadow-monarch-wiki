@@ -62,7 +62,7 @@ Pour jouer à Shadow Monarch, vous avez besoin de :
 ## 🚀 Démarrage Rapide
 
 !!! tip "Nouveau joueur ?"
-    Consultez le [Guide de démarrage](getting-started.md) pour créer votre première Ombre en 10 minutes !
+    Consultez le [Guide de démarrage](getting-started.md) pour créer votre première Ombre
 
 **Les étapes essentielles :**
 
@@ -106,27 +106,6 @@ Pour jouer à Shadow Monarch, vous avez besoin de :
 
 ---
 
-## 🌟 Progression Typique
-
-```mermaid
-graph LR
-    A[Première Ombre] --> B[10 Ombres]
-    B --> C[Umbral Armor]
-    C --> D[50 Ombres]
-    D --> E[Shadow Knight]
-    E --> F[Monarch Armor]
-    F --> G[Boss Ombres]
-    G --> H[Build Ultime]
-```
-
-**Temps estimé :**
-- Early Game (Umbral Armor) : **1-2 semaines**
-- Mid Game (50 Ombres) : **2-3 semaines**
-- Late Game (Monarch Armor) : **1-2 mois**
-- Endgame (Build maxé) : **3+ mois**
-
----
-
 ## 📊 Statistiques du Mod
 
 | Catégorie | Contenu |
@@ -146,7 +125,7 @@ graph LR
 
 ## 📝 Crédits
 
-**Développé par :** astra
+**Développé par :** Astra
 **Inspiré de :** Solo Leveling (manhwa/anime)  
 **Basé sur :** Iron's Spells and Spellbooks
 

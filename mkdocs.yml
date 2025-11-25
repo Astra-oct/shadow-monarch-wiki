@@ -10,7 +10,7 @@ edit_uri: edit/main/docs/
 
 # Theme
 theme:
-  name: material
+  name: just-the-docs
   language: fr
   palette:
     # Mode clair
@@ -90,6 +90,7 @@ markdown_extensions:
 
 # Plugins
 plugins:
+  - jekyll-seo-tag
   - search:
       lang: fr
   - minify:
