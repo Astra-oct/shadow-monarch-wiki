@@ -3,29 +3,37 @@ site_description: Guide complet pour le mod Shadow Monarch - Minecraft 1.21.1
 site_author: astra
 site_url: https://astra-oct.github.io/shadow-monarch-wiki
 
-# Repository (mettre votre URL GitHub)
 repo_name: shadow-monarch-wiki
 repo_url: https://github.com/astra-oct/shadow-monarch-wiki
 edit_uri: edit/main/docs/
 
-# Theme
+# --- THEME MATERIAL (correct) ---
 theme:
-  name: just-the-docs
+  name: material
   language: fr
+
   palette:
-    # Mode dark
     - scheme: default
       primary: deep purple
       accent: purple
-  
+      toggle:
+        icon: material/weather-night
+        name: Mode sombre
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/weather-sunny
+        name: Mode clair
+
   font:
     text: Roboto
     code: Roboto Mono
-  
+
   icon:
     logo: material/ghost
     repo: fontawesome/brands/github
-  
+
   features:
     - navigation.instant
     - navigation.tracking
@@ -43,7 +51,7 @@ theme:
     - content.code.copy
     - content.code.annotate
 
-# Extensions Markdown
+# Extensions Markdown (OK)
 markdown_extensions:
   - abbr
   - admonition
@@ -80,26 +88,26 @@ markdown_extensions:
 
 # Plugins
 plugins:
-  - jekyll-seo-tag
   - search:
       lang: fr
   - minify:
-      minify_html: true 
+      minify_html: true
+
 # Navigation
 nav:
   - Accueil: index.md
-  
+
   - Guide de démarrage:
     - Débuter: getting-started.md
     - Prérequis: prerequisites.md
     - Première Ombre: first-shadow.md
-  
+
   - Système d'Ombres:
     - Vue d'ensemble: shadows/overview.md
     - Les 5 Tiers: shadows/tiers.md
     - Stats & Mécaniques: shadows/mechanics.md
     - Shadow Knights: shadows/shadow-knights.md
-  
+
   - Monarch's Domain:
     - La Dimension: domain/dimension.md
     - Interface GUI: domain/gui.md
@@ -107,7 +115,7 @@ nav:
     - Onglet Loadouts: domain/loadouts.md
     - Onglet Titles: domain/titles.md
     - Onglet Capes: domain/capes.md
-  
+
   - Sorts:
     - Vue d'ensemble: spells/overview.md
     - Arise: spells/arise.md
@@ -117,34 +125,34 @@ nav:
     - Monarch Maw: spells/maw.md
     - Monarch Blend: spells/blend.md
     - Monarch Veil: spells/veil.md
-  
+
   - Équipement:
     - Matériaux: equipment/materials.md
     - Armes: equipment/weapons.md
     - Armures: equipment/armor.md
     - Accessoires: equipment/accessories.md
     - Système d'Upgrade: equipment/upgrades.md
-  
+
   - Achievements:
     - Liste complète: achievements/list.md
     - Débuts: achievements/early.md
     - Progression: achievements/mid.md
     - Endgame: achievements/late.md
     - Secrets: achievements/secrets.md
-  
+
   - Stratégies:
     - Progression: strategies/progression.md
     - Builds & Loadouts: strategies/builds.md
     - Combos: strategies/combos.md
     - PvP: strategies/pvp.md
     - PvE: strategies/pve.md
-  
+
   - Ressources:
     - FAQ: faq.md
     - Glossaire: glossary.md
     - Compatibilité Mods: compatibility.md
     - Configuration: configuration.md
-  
+
   - Communauté:
     - Liens utiles: community/links.md
     - Conseils de vétérans: community/tips.md
@@ -162,18 +170,10 @@ extra:
     - icon: fontawesome/brands/youtube
       link: https://youtube.com/@votre-chaine
       name: YouTube
-  
-  version:
-    provider: mike
-  
-  analytics:
-    provider: google
-    property: G-XXXXXXXXXX # Remplacer par votre ID Google Analytics
 
 # Copyright
-copyright: Copyright &copy; 2024 Shadow Monarch Wiki - Tous droits réservés
+copyright: Copyright © 2024 Shadow Monarch Wiki - Tous droits réservés
 
-# CSS/JS custom (optionnel)
 extra_css:
   - stylesheets/extra.css
 
