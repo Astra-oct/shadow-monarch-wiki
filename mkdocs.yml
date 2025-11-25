@@ -1,0 +1,190 @@
+site_name: Shadow Monarch Wiki
+site_description: Guide complet pour le mod Shadow Monarch - Minecraft 1.21.1
+site_author: astra
+site_url: https://astra-oct.github.io/shadow-monarch-wiki
+
+# Repository (mettre votre URL GitHub)
+repo_name: shadow-monarch-wiki
+repo_url: https://github.com/astra-oct/shadow-monarch-wiki
+edit_uri: edit/main/docs/
+
+# Theme
+theme:
+  name: material
+  language: fr
+  palette:
+    # Mode clair
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Passer en mode sombre
+    # Mode sombre
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Passer en mode clair
+  
+  font:
+    text: Roboto
+    code: Roboto Mono
+  
+  icon:
+    logo: material/ghost
+    repo: fontawesome/brands/github
+  
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+
+# Extensions Markdown
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Plugins
+plugins:
+  - search:
+      lang: fr
+  - minify:
+      minify_html: true 
+# Navigation
+nav:
+  - Accueil: index.md
+  
+  - Guide de démarrage:
+    - Débuter: getting-started.md
+    - Prérequis: prerequisites.md
+    - Première Ombre: first-shadow.md
+  
+  - Système d'Ombres:
+    - Vue d'ensemble: shadows/overview.md
+    - Les 5 Tiers: shadows/tiers.md
+    - Stats & Mécaniques: shadows/mechanics.md
+    - Shadow Knights: shadows/shadow-knights.md
+  
+  - Monarch's Domain:
+    - La Dimension: domain/dimension.md
+    - Interface GUI: domain/gui.md
+    - Onglet Army: domain/army.md
+    - Onglet Loadouts: domain/loadouts.md
+    - Onglet Titles: domain/titles.md
+    - Onglet Capes: domain/capes.md
+  
+  - Sorts:
+    - Vue d'ensemble: spells/overview.md
+    - Arise: spells/arise.md
+    - Monarch's Domain: spells/domain.md
+    - Monarch's Army: spells/army.md
+    - Monarch Step: spells/step.md
+    - Monarch Maw: spells/maw.md
+    - Monarch Blend: spells/blend.md
+    - Monarch Veil: spells/veil.md
+  
+  - Équipement:
+    - Matériaux: equipment/materials.md
+    - Armes: equipment/weapons.md
+    - Armures: equipment/armor.md
+    - Accessoires: equipment/accessories.md
+    - Système d'Upgrade: equipment/upgrades.md
+  
+  - Achievements:
+    - Liste complète: achievements/list.md
+    - Débuts: achievements/early.md
+    - Progression: achievements/mid.md
+    - Endgame: achievements/late.md
+    - Secrets: achievements/secrets.md
+  
+  - Stratégies:
+    - Progression: strategies/progression.md
+    - Builds & Loadouts: strategies/builds.md
+    - Combos: strategies/combos.md
+    - PvP: strategies/pvp.md
+    - PvE: strategies/pve.md
+  
+  - Ressources:
+    - FAQ: faq.md
+    - Glossaire: glossary.md
+    - Compatibilité Mods: compatibility.md
+    - Configuration: configuration.md
+  
+  - Communauté:
+    - Liens utiles: community/links.md
+    - Conseils de vétérans: community/tips.md
+    - Contribuer: community/contribute.md
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/votre-serveur
+      name: Discord
+    - icon: fontawesome/brands/github
+      link: https://github.com/astra-oct
+      name: GitHub
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/@votre-chaine
+      name: YouTube
+  
+  version:
+    provider: mike
+  
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX # Remplacer par votre ID Google Analytics
+
+# Copyright
+copyright: Copyright &copy; 2024 Shadow Monarch Wiki - Tous droits réservés
+
+# CSS/JS custom (optionnel)
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
