@@ -1,39 +1,44 @@
+# Site Information
 site_name: Shadow Monarch Wiki
 site_description: Guide complet pour le mod Shadow Monarch - Minecraft 1.21.1
-site_author: astra
-site_url: https://astra-oct.github.io/shadow-monarch-wiki
+site_author: Astra
+site_url: https://astra-oct.github.io/shadow-monarch-wiki/
 
+# Repository
 repo_name: shadow-monarch-wiki
 repo_url: https://github.com/astra-oct/shadow-monarch-wiki
 edit_uri: edit/main/docs/
 
-# --- THEME MATERIAL (correct) ---
+# Theme Configuration
 theme:
   name: material
   language: fr
-
+  
   palette:
+    # Mode clair
     - scheme: default
       primary: deep purple
       accent: purple
       toggle:
-        icon: material/weather-night
-        name: Mode sombre
+        icon: material/brightness-7
+        name: Passer en mode sombre
+    
+    # Mode sombre
     - scheme: slate
       primary: deep purple
       accent: purple
       toggle:
-        icon: material/weather-sunny
-        name: Mode clair
-
+        icon: material/brightness-4
+        name: Passer en mode clair
+  
   font:
     text: Roboto
     code: Roboto Mono
-
+  
   icon:
     logo: material/ghost
     repo: fontawesome/brands/github
-
+  
   features:
     - navigation.instant
     - navigation.tracking
@@ -51,7 +56,7 @@ theme:
     - content.code.copy
     - content.code.annotate
 
-# Extensions Markdown (OK)
+# Markdown Extensions
 markdown_extensions:
   - abbr
   - admonition
@@ -79,7 +84,11 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -93,21 +102,21 @@ plugins:
   - minify:
       minify_html: true
 
-# Navigation
+# Navigation Structure
 nav:
   - Accueil: index.md
-
+  
   - Guide de démarrage:
     - Débuter: getting-started.md
     - Prérequis: prerequisites.md
     - Première Ombre: first-shadow.md
-
+  
   - Système d'Ombres:
     - Vue d'ensemble: shadows/overview.md
     - Les 5 Tiers: shadows/tiers.md
     - Stats & Mécaniques: shadows/mechanics.md
     - Shadow Knights: shadows/shadow-knights.md
-
+  
   - Monarch's Domain:
     - La Dimension: domain/dimension.md
     - Interface GUI: domain/gui.md
@@ -115,7 +124,7 @@ nav:
     - Onglet Loadouts: domain/loadouts.md
     - Onglet Titles: domain/titles.md
     - Onglet Capes: domain/capes.md
-
+  
   - Sorts:
     - Vue d'ensemble: spells/overview.md
     - Arise: spells/arise.md
@@ -125,40 +134,40 @@ nav:
     - Monarch Maw: spells/maw.md
     - Monarch Blend: spells/blend.md
     - Monarch Veil: spells/veil.md
-
+  
   - Équipement:
     - Matériaux: equipment/materials.md
     - Armes: equipment/weapons.md
     - Armures: equipment/armor.md
     - Accessoires: equipment/accessories.md
     - Système d'Upgrade: equipment/upgrades.md
-
+  
   - Achievements:
     - Liste complète: achievements/list.md
     - Débuts: achievements/early.md
     - Progression: achievements/mid.md
     - Endgame: achievements/late.md
     - Secrets: achievements/secrets.md
-
+  
   - Stratégies:
     - Progression: strategies/progression.md
     - Builds & Loadouts: strategies/builds.md
     - Combos: strategies/combos.md
     - PvP: strategies/pvp.md
     - PvE: strategies/pve.md
-
+  
   - Ressources:
     - FAQ: faq.md
     - Glossaire: glossary.md
     - Compatibilité Mods: compatibility.md
     - Configuration: configuration.md
-
+  
   - Communauté:
     - Liens utiles: community/links.md
     - Conseils de vétérans: community/tips.md
     - Contribuer: community/contribute.md
 
-# Extra
+# Extra Configuration
 extra:
   social:
     - icon: fontawesome/brands/discord
@@ -170,12 +179,15 @@ extra:
     - icon: fontawesome/brands/youtube
       link: https://youtube.com/@votre-chaine
       name: YouTube
+  
+  generator: false
 
 # Copyright
-copyright: Copyright © 2024 Shadow Monarch Wiki - Tous droits réservés
+copyright: Copyright &copy; 2024 Shadow Monarch Wiki - Tous droits réservés
 
-extra_css:
-  - stylesheets/extra.css
+# Custom CSS/JS (créer ces fichiers plus tard si besoin)
+#extra_css:
+ # - stylesheets/extra.css
 
-extra_javascript:
-  - javascripts/extra.js
+#extra_javascript:
+ # - javascripts/extra.js
